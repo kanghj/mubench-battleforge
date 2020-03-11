@@ -1,0 +1,8 @@
+0.00.00_b30 (Second Alpha):
+ * First time the admintool was released
+ * Early version of IRC-Client added
+ + Map performance increased
+ + DB performance increased
+ x Repaint problems fixed
+ x Database will be ended properly on exit
+ - We removed the visual style (l&f) for now

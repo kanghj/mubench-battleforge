@@ -1,0 +1,7 @@
+Used library versions
+
+capi.jar                - 
+log4j.jar               - 1.2.9
+irclib.jar              - ?
+hsqldb.jar              - 
+commons-collections.jar - 3.1

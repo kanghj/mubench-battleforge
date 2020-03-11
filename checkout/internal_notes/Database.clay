@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clay-model clay-version="1.1.0">
+<database-model alias="" author="" begin-script="" end-script="" name="myModel2" remarks="" sql-dialect-id="jp.azzurri.clay.model.physical.dialect.HSQLDB_1_7_2_Dialect" version="1.0">
+<database-model-description></database-model-description>
+<schema-list>
+<schema alias="" name="DEFAULT_SCHEMA" remarks="">
+<schema-description></schema-description>
+<domain-list/>
+<table-list>
+<table alias="" name="BF_DROPSHIP" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="45" y="25"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="DROPSHIPID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="NULL" mandatory="false" name="UNITID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="NULL" mandatory="false" name="MECH" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="NULL" mandatory="false" name="PANZER" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="NULL" mandatory="false" name="INFANTRIE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="NULL" mandatory="false" name="LADUNG" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="NULL" mandatory="false" name="UNITTYPEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="GAMEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="POPULATIONSTATUSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_DROPSHIP" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="DROPSHIPID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_DROPSHIP" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="DROPSHIPID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_GAMES" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="330" y="34"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="GAMEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="50" decimal-digits="0" default-value="" mandatory="true" name="GAMENAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="true" name="ROUNDDATE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_GAMES" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="GAMEID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_GAMES" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="GAMEID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_GAMEUSER" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="630" y="10"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="GAMEUSERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="GAMEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="USERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="OWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="true" name="ROUNDDATE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_GAMEUSER" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="GAMEUSERID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_GAMEUSER" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="GAMEUSERID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_JUMPSHIP" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="940" y="10"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="JUMPSHIPID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="JUMPROUTE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="SHIPPROPERTYID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="JUMPCHARGES" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="X" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="Y" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="Z" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="UNITID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_JUMPSHIP" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="JUMPSHIPID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_JUMPSHIP" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="JUMPSHIPID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_MECH" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="1250" y="10"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="MECHID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="NULL" mandatory="false" name="UNITID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_MECH" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="MECHID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_MECH" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="MECHID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_OWNER" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="34" y="225"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="OWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="OWNER" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="12" decimal-digits="0" default-value="" mandatory="false" name="COLOR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="LOGO" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="OWNERTYPE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="STARTAREAID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_OWNER" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="OWNERID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_OWNER" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="OWNERID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_POPULATIONSTATUS" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="320" y="143"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="POPULATIONSTATUSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="POPULATIONSTATUS" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_POPULATIONSTATUS" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="POPULATIONSTATUSID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_POPULATIONSTATUS" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="POPULATIONSTATUSID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_SEQUENCER" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="630" y="143"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="SEQUENCERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="USERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_SEQUENCER" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="SEQUENCERID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_SEQUENCER" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="SEQUENCERID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_SESSION" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="940" y="143"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="SESSIONID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="USERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="19" decimal-digits="0" default-value="" mandatory="true" name="LOGIN" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="19" decimal-digits="0" default-value="" mandatory="false" name="LOGOUT" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="GAMEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_SESSION" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="SESSIONID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_SESSION" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="SESSIONID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_SHIPPROPERTY" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="1250" y="143"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="SHIPPROPERTYID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="UNITTYPID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="MAXJUMPCHARGES" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="DOCKINGSTATIONS" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="TONNAGE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="TREIBSTOFF" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="LADUNG" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="CREW" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PASSAGIERE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PANZFRONT" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PANZHECK" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PANZFRONTL" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PANZFRONTR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PANZHECKL" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PANZHECKR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_SHIPPROPERTY" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="SHIPPROPERTYID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_SHIPPROPERTY" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="SHIPPROPERTYID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_STARTAREA" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="10" y="381"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="STARTAREAID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="STARTAREA" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_STARTAREA" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="STARTAREAID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_STARTAREA" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="STARTAREAID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_STARTSYSTEMOWNER" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="320" y="381"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="STARTSYSTEMOWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="SYSTEMID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="OWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="STARTAREAID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_STARTSYSTEMOWNER" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="STARTSYSTEMOWNERID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_STARTSYSTEMOWNER" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="STARTSYSTEMOWNERID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_STARTYPE" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="630" y="381"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="STARTYPEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="STARTYPE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="JUMPSAILRECHARGING" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="DISTANCETOSUN" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="TRAVELTIME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="COLOR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_STARTYPE" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="STARTYPEID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_STARTYPE" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="STARTYPEID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_SYSTEMDESCRIPTION" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="940" y="381"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="SYSTEMDESCRIPTIONID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="SYSTEMID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="5" decimal-digits="0" default-value="" mandatory="false" name="COUNTRYCODE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2000" decimal-digits="0" default-value="" mandatory="false" name="DESCRIPTION" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_SYSTEMDESCRIPTION" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="SYSTEMDESCRIPTIONID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_SYSTEMDESCRIPTION" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="SYSTEMDESCRIPTIONID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_SYSTEMOWNER" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="1250" y="381"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="SYSTEMOWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="SYSTEMID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="OWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="GAMEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="RADAR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="ALARM" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_SYSTEMOWNER" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="SYSTEMOWNERID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_SYSTEMOWNER" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="SYSTEMOWNERID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_SYSTEMS" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="10" y="484"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="SYSTEMID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="SYSTEM" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="true" name="X_KOR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="true" name="Y_KOR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="Z_KOR" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="OWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="STARTYPEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="POPULATION" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="RESSOURCES" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="BITMAP" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="POPULATIONSTATUSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_SYSTEMS" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="SYSTEMID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_SYSTEMS" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="SYSTEMID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_UNITCLASS" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="320" y="484"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="UNITCLASSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="UNITCLASSNAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_UNITCLASS" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="UNITCLASSID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_UNITCLASS" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="UNITCLASSID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_UNITMOVEMENTS" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="630" y="484"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="UNITMOVMENTSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="UNITSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="50" decimal-digits="0" default-value="" mandatory="false" name="ARRIVALDATE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="50" decimal-digits="0" default-value="" mandatory="false" name="STARTDATE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="SYSTEMID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="DOCKINGUNITID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_UNITMOVEMENTS" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="UNITMOVMENTSID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_UNITMOVEMENTS" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="UNITMOVMENTSID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_UNITS" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="940" y="484"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="UNITSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="UNITNAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="OWNERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="GAMEID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="UNITTYPID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_UNITS" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="UNITSID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_UNITS" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="UNITSID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_UNITTYPE" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="1250" y="484"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="UNITTYPID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="UNITTYPNAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="UNITCLASSID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="CONSTRUCTIONTIME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="PURCASEPRICE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="17" decimal-digits="0" default-value="" mandatory="false" name="MAINTENANCECOSTS" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="6" name="FLOAT" selected-variant-pattern="FLOAT(%n)">
+<variant type-name-pattern="FLOAT"/>
+<variant precision-max="15" precision-min="1" precision-variable="%n" type-name-pattern="FLOAT(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_UNITTYPE" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="UNITTYPID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_UNITTYPE" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="UNITTYPID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="BF_USER" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="10" y="662"/>
+<column-list>
+<column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="USERID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="50" decimal-digits="0" default-value="" mandatory="true" name="USER" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="50" decimal-digits="0" default-value="" mandatory="true" name="PASSWORT" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_BF_USER" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="USERID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_BF_USER" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="USERID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+</table-list>
+</schema>
+</schema-list>
+</database-model>
+</clay-model>

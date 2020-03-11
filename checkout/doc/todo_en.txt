@@ -1,0 +1,69 @@
+This ToDo-List contains actually planned features. As a feature is realized, it
+will disappear from this document and show up in the changelog for the version
+where it came in.
+
+                                T o D o - L I S T
+
+ToDo:
+- (a) User administration (Xxenon, PHP)
+- (a) Used libraries into info dialog
+- (a) Build a table with rights
+- (a) Panel Game Properties (Icon, ...)
+- (a) User Interface for the PHP-Installation (Xxenon)
+- (a) Rework route calculation (Manuel)
+- (a) Internal restructuring of classes / adding listeners to a central
+      universe-model (Werner / Dirk)
+- (a) Finishing IRC-Client (Meldric)
+- (a) Remember waypoints of a route for calculation and displaying reasons
+- (a) Implement the steps to fullfill a complete game round (all)
+- (a) Unitsdisplay (Tree / PanelUnitTree)
+- (a) Different buildings on systems
+- (a) Implement production streets to industry (can build chassis when the plans
+      are known) - Information raids!
+- (a) Dialog to manage logical Units
+- (b) Display of all open battles for all users during start of the client
+      (display of remaining days until automatic solution)
+- (b) Anzeige der offenen Schlachten für alle User beim Start des Clients
+- (b) Wizard for generating complete logical units in structure
+- (b) Add privileges for editing systems
+- (b) Save passwords encrypted (Dirk)
+- (b) PlugIn interface to diaplay customized panels (as tabs)
+- (b) Panel to organize logical units (?)
+- (b) Mark systems with active fights on the map (reticule?)
+- (b) Implement charakter creation, link characters with units
+      (Character properties should have an impact on gameplay)
+- (b) Draw borders of the factions in the map (Dirk)
+- (b) Implement industry
+- (b) Make a proper concept for a strategy-panel (all)
+- (b) Different views to units and logical units (all)
+- (b) Fill strings for internationalization (all)
+- (b) Logical units (Werner)
+- (b) Diplomacy (Meldric)
+- (b) SSL-Encryption of all web communication / Security (Dirk)
+- (b) Define an interface for "game engines" to play rising conflicts
+- (c) Replace table by textArea in IRCClient
+- (c) Add the playing user in the owner object
+- (c) Make a Mech-Detail panel
+- (c) Documentation (all)
+- (c) Load capacities of vessels (Werner)
+- (c) Develop a unique visual style (Meldric / Dirk)
+
+Tasks:
+- Rework snow graphics
+- Revise owner graphics eintragen (database)
+- Revise owner colors (database)
+- Find pictures for the buildings (Col. Gooseman)
+- Take over missing systems (from MBO database)
+- Show statusbar only on the map tab
+
+Priorities:
+(a) Very high
+(b) High
+(c) Later
+
+--------------------------------------------------------------------------------
+
+Known bugs:
+- Saving of texts in the admin-module doesn't work yet
+- Pressing Cancel in the second stage of the login dialog leads to a
+  NullPointer-Exception

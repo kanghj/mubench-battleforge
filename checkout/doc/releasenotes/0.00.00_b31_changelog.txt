@@ -1,0 +1,4 @@
+0.00.00_b31 (Third Alpha):
+ + Map performance significantly increased (Useable on a 300Mhz/64MB-Laptop!)
+ * Map is dragable with the mouse now (hold button and move!)
+ * Waypoints can be added by holding shift and leftclick on a system now

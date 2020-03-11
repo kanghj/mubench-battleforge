@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jnlp spec="1.0+" codebase="http://ziegenbalg-tr.gwi-ag.com/battleforge" href="battleforge.jnlp">
+
+  <information>
+     <title>Battleforge</title>
+     <vendor>Battleforge Development Team</vendor>
+     <homepage href="index.html" />
+     <description>Battleforge description</description>
+     <icon href="icon.jpg" kind="shortcut" />
+
+     <offline-allowed />
+   </information>
+
+  <resources>
+     <j2se version="1.5+" initial-heap-size="80M" max-heap-size="180M"/>
+     <jar href="lib/battleforge.jar" main="true" />
+     <jar href="lib/commons-collections-3.1.jar" />
+     <jar href="lib/hsqldb.jar" />
+     <jar href="lib/irclib.jar" />
+     <jar href="lib/log4j-1.2.9.jar" />
+     <jar href="lib/properties.jar" />
+     <jar href="lib/resources.jar" />
+     <jar href="lib/capi.jar" />
+     <jar href="lib/bfdb.jar" />
+     <jar href="lib/doc.jar" />
+     <jar href="lib/animation-1.1.3.jar" />
+
+     <jar href="lib/external/java3d/j3dcore.jar" />
+     <jar href="lib/external/java3d/j3dutils.jar" />
+     <jar href="lib/external/java3d/vecmath.jar" />
+   </resources>
+   
+	 <resources os="SunOS" arch="sparc">
+        <nativelib href="lib/external/java3d/native/solaris/sparc/java3d.jar"/>
+   </resources>
+    
+	 <resources os="SunOS" arch="sparcv9">
+        <nativelib href="lib/external/java3d/native/solaris/sparcv9/java3d.jar"/>
+   </resources>
+   
+	 <resources os="Windows">
+        <nativelib href="lib/external/java3d/native/windows/java3d.jar"/>
+   </resources>
+
+	 <resources os="Linux" arch="i586">
+        <nativelib href="lib/external/java3d/native/linux/i586/java3d.jar"/>
+   </resources>
+
+	 <resources os="Linux" arch="amd64">
+        <nativelib href="lib/external/java3d/native/linux/amd64/java3d.jar"/>
+   </resources>
+
+  <application-desc main-class="de.battleforge.BFLauncher"/>
+
+  <security>
+     <all-permissions/>
+  </security>
+
+</jnlp>

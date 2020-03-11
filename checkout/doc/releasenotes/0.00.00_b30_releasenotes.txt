@@ -1,0 +1,18 @@
+New:
+- IRC-Client
+- Code Optimization
+- Admin-Tool for editing resources
+
+Known issues:
+- no proper documentation
+- saving of planet texts isn't possible yet
+- missing repaint after calculating a map
+
+TODO:
+- User Administration
+- Internet connection
+- logical units
+- second view for locigal units
+- switching to webstart
+- documentation
+- load capacity for dropships

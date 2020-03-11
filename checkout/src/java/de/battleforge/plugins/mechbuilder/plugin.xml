@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+	<plugin class="de.battleforge.plugins.mechbuilder.MechBuilderPlugin">
+		<name></name>
+		<author></author>
+		<description></description>
+		<shortdescription></shortdescription>
+		<icon></icon>
+	</plugin>

@@ -1,0 +1,7 @@
+- Scale images (smaller)
+- Userlist
+- Find sounds for different events
+- Internationalization
+- First line is always blank... why?
+- Give action into the reminder to control what action is fired
+- Implement "Save to logfile"

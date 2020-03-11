@@ -1,0 +1,15 @@
+Installer-Notes
+
+> 	Installerfiles untersuchen
+-> 		SQL-Dateien
+->		Selbstlöschung
+
+> 	Installer ändern
+->		SQL-Files an BF anpassen und DB von unnötigen Modultabellen reinigen
+
+>	Änderung am NextNuke
+->		Nuke an geänderte SQL-DB anpassen
+->		Unnötige Module entfernen
+
+§ Benutzerverwaltung + von BF benötigte Files
+

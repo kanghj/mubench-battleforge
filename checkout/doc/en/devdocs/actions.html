@@ -1,0 +1,95 @@
+<!-- ------------------ -->
+<!--                    -->
+<!-- www.BattleForge.de -->
+<!--                    -->
+<!-- ------------------ -->
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="de">
+<link rel="StyleSheet" href="../../style.css" type="text/css">
+</head>
+
+<body bgcolor="#254055" leftmargin="0" topmargin="0">
+
+<br>
+<br>
+<table border="0" width="600" align="center" id="table2" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+		<img border="0" src="../../images/header_docs.png" width="600" height="155"></td>
+	</tr>
+</table>
+<table align="center" border="0" width="600" id="table3" cellspacing="0" cellpadding="3" bordercolor="#000000">
+	<tr>
+		<td bgcolor="#061F35">
+		<div align="center">
+			<table border="0" width="100%" id="table1" cellspacing="1" cellpadding="8">
+				<tr>
+					<td width="100%" valign="top">
+					<h1>Actions</h1>
+					<ol>
+						<li>An action must be defined in the Enumeration &quot;ACTIONS&quot;</li>
+						<li>Listen:<br>
+&nbsp;<table border="0" id="table2" cellspacing="0" cellpadding="12" bgcolor="#141B63">
+							<tr>
+								<td><code>class xxx implements ActionCallBackListener 
+								{<br>
+								<br>
+&nbsp; ...<br>
+								<br>
+&nbsp; ActionManager.addActionCallbackListener( ACTIONS.VIEW_FULL, this );<br>
+&nbsp; ...<br>
+								<br>
+&nbsp; public boolean handleAction( ACTIONS action, ActionObject o ) {<br>
+&nbsp;&nbsp;&nbsp; switch ( action ) {<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case CHANGE_LANGUAGE:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setTexts();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>
+								<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+								<br>
+&nbsp;&nbsp;&nbsp; return true;<br>
+								<br>
+&nbsp; } // handleAction<br>
+								} // class xxx</font></code></td>
+							</tr>
+						</table>
+						<p></code><b><i>Important note:<br>
+						</i></b>The return value must be true to make other classes, 
+						that listen to the same action, perform their reactions. 
+						If return value here is false, no other class will wake 
+						up on that action anymore!<br>
+&nbsp;</p>
+						</li>
+						<li>The action must be fired somewhere to make all listeners 
+						react to is. Fire the action like this:<br>
+&nbsp;<table border="0" id="table3" cellspacing="0" cellpadding="12" bgcolor="#141B63">
+							<tr>
+								<td><code>ActionManager.getAction( ACTIONS.CHANGE_LANGUAGE 
+								).execute( null );</code></td>
+							</tr>
+						</table>
+						<p><b><i>Important note:<br>
+						</i></b>The parameter of the execute method takes an object. 
+						You can use that object while handling the action!</p>
+						</li>
+					</ol>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+</table>
+</div>
+<p align="center">
+<img border="0" src="../../images/logo.gif" width="80" height="65"></p>
+<p align="center">&nbsp;</p>
+
+</body>
+
+</html>

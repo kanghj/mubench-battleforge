@@ -1,0 +1,4 @@
+This is the first alpha release of battleforge.
+As stated in the included documentation, there
+are many things not working yet. This is just to
+show all who are interested where we are.

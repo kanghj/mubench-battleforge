@@ -1,0 +1,11 @@
+0.00.00_b43 (Fourth Alpha):
+ * Global exception handling
+ * Internetconnection (PHP tunnel)
+ * New settings-dialog to edit battleforge.properties
+ * Setupdialog for properties during first startup (local chache)
+ * Deployment as Java webstart possible (alternative)
+ * New ant-build scripts
+ + Replace files to streams
+ + Language selection (only) during login process
+ + Userinterface optimizations
+ + Replaced arrayLists with list-objects

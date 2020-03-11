@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!--
+
+  BattleForge ant-script for distribution
+  
+-->
+
+<project name="de.battleforge" basedir="." default="dist">
+
+	<!-- get the buildnumber -->
+	<property file="build.number" />
+
+	<!-- version settings -->
+	<property name="version.major" value="0" />
+	<property name="version.minor" value="0" />
+	<property name="version.build" value="${build.number}" />
+	<property name="version.full" value="${version.major}.${version.minor}.${version.build}" />
+
+	<!-- directory settings -->
+	<property name="lib.dir" value="lib" />
+	<property name="src.dir" value="src" />
+	<property name="doc.dir" value="doc" />
+	<property name="bin.dir" value="bin" />
+	<property name="etc.dir" value="etc" />
+	<property name="src.dir" value="src" />
+	<property name="src.java.dir" value="${src.dir}/java" />
+	<property name="jdo.dir" value="${src.java.dir}/de/battleforge/jdo" />
+	<property name="javadoc.dir" value="${doc.dir}/javadoc" />
+	<property name="external.dir" value="external" />
+	<property name="dist.base.dir" value="dist" />
+	<property name="dist.dir" value="${dist.base.dir}/battleforge" />
+	<property name="dist.src_dir" value="${dist.base.dir}/battleforge_sources" />
+	<property name="dist.javadoc_dir" value="${dist.base.dir}/battleforge_javadoc" />
+	<property name="classes.dir" value="classes" />
+	<property name="resources.dir" value="resources" />
+	<property name="properties.dir" value="properties" />
+	<property name="keystore.dir" value="${etc.dir}/keystore" />
+	<property name="jdk-packagelist.dir" value="${etc.dir}/jdk-packagelist" />
+
+	<!-- name settings -->
+	<property name="doc.jar.name" value="doc.jar" />
+	<property name="dist.zip.name" value="battleforge_${version.full}.zip" />
+	<property name="dist.src_zip.name" value="battleforge_${version.full}_sources.zip" />
+	<property name="dist.javadoc_zip.name" value="battleforge_${version.full}_javadoc.zip" />
+	<property name="dist.jar.name" value="battleforge.jar" />
+	<property name="jnlp.file.name" value="battleforge.jnlp" />
+	<property name="dist.webstart.zip.name" value="battleforge_${version.full}_webstart.zip" />
+	<property name="resources.jar.name" value="resources.jar" />
+	<property name="properties.jar.name" value="properties.jar" />
+
+
+	<!-- keystore settings -->
+	<property name="keystore.password" value="battleforge" />
+	<property name="keystore.alias" value="battleforge" />
+	<property name="keystore.location" value="${keystore.dir}/battleforge" />
+
+	<path id="classpath">
+		<fileset dir="${lib.dir}">
+		    <include name="**/*.jar"/>
+		</fileset>
+		<pathelement location="${classes.dir}"/>
+	</path>
+
+	<!-- prints some useful information about the java environment -->
+	<target name="info" depends="init" description="--> prints some information">
+		<echo message="ant.project.name=${ant.project.name}" />
+		<echo message="basedir=${basedir}" />
+		<echo message="classes.dir=${classes.dir}" />
+		<echo message="dist.dir=${dist.dir}" />
+		<echo message="" />
+		<echo message="java.vm.info=${java.vm.info}" />
+		<echo message="java.vm.name=${java.vm.name}" />
+		<echo message="java.vm.vendor=${java.vm.vendor}" />
+		<echo message="java.vm.version=${java.vm.version}" />
+		<echo message="" />
+		<echo message="os.arch=${os.arch}" />
+		<echo message="os.name=${os.name}" />
+		<echo message="os.version=${os.version}" />
+		<echo message="" />
+		<echo message="file.encoding=${file.encoding}" />
+		<echo message="" />
+		<echo message="user.language=${user.language}" />
+		<echo message="user.home=${user.home}" />
+		<echo message="user.name=${user.name}" />
+	</target>
+
+	
+	<!-- all other targets depend on this target provides current time settings for the whole build process -->
+	<target name="init" description="--> initializes the build">
+
+		<tstamp>
+			<format property="DTSTAMP" pattern="yyyy-MM-dd HH:mm" />
+		</tstamp>
+
+		<echo message="Build started at '${DTSTAMP}'." />
+		<echo message="Build number is '${build.number}'." />
+
+	</target>
+
+	
+	<!-- creates a distribution set of the sources -->
+	<target name="source" depends="prepare" description="--> generates a source package to deliver">
+		
+		<echo>Copy sources</echo>
+
+		<delete dir="${dist.src_dir}" />
+		<mkdir dir="${dist.src_dir}" />
+		
+		<copy todir="${dist.src_dir}">
+			<fileset dir="${src.dir}">
+				<include name="**/*.java" />
+				<include name="**/*.php" />
+				<include name="**/*.sql" />
+				<exclude name="**/*Test*.java" />
+			</fileset>
+		</copy>
+		
+		<zip destfile="${dist.base.dir}/${dist.src_zip.name}" basedir="${dist.src_dir}" />
+		
+	</target>
+
+
+	<!-- creates a distribution set of javadocs -->
+	<target name="dist-javadoc" depends="javadoc" description="--> generates a package to deliver javadocs">
+		
+		<echo>Copy javadocs</echo>
+
+		<delete dir="${dist.javadoc_dir}" />
+		<mkdir dir="${dist.javadoc_dir}" />
+		
+		<copy todir="${dist.javadoc_dir}">
+			<fileset dir="${javadoc.dir}">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+		
+		<zip destfile="${dist.base.dir}/${dist.javadoc_zip.name}" basedir="${dist.javadoc_dir}" />
+		
+	</target>
+	
+	
+	<!-- prepares the distribution by cleaning previously created directories and recreating them -->
+	<target name="prepare" depends="init, clean" description="--> preparing the distribution">
+
+		<mkdir dir="${dist.dir}/${lib.dir}" />
+
+	</target>
+
+
+	<!-- increments the buildnumber -->
+	<target name="buildnumber" description="--> increments the buildnumber">
+
+		<buildnumber />
+
+	</target>
+
+
+	<!-- cleans the output-directory -->
+	<target name="clean" depends="init" description="--> do a cleanup of all generated files and directories">
+
+		<delete dir="${dist.dir}" />
+
+	</target>
+
+
+	<!-- creates the jars -->
+	<target name="jar-build" depends="init, clean, prepare" description="--> creates the jars">
+
+		<jar destfile="${dist.dir}/${dist.jar.name}" compress="true">
+			<fileset dir="${classes.dir}">
+				<include name="de/**/*.class" />
+				<exclude name="**/*Test*.class" />
+			</fileset>
+		</jar>
+
+		<jar destfile="${dist.dir}/${lib.dir}/${resources.jar.name}" basedir="${resources.dir}" compress="true" />
+		<jar destfile="${dist.dir}/${lib.dir}/${properties.jar.name}" basedir="${properties.dir}" compress="true" />
+
+	</target>
+
+	
+	<target name="jar-build-dist" depends="init, clean, prepare" description="--> creates the jars">
+
+		<jar destfile="${dist.dir}/${dist.jar.name}" compress="true" manifest="manifest/Manifest.mf">
+			<fileset dir="${classes.dir}">
+				<include name="de/**/*.class" />
+				<exclude name="**/*Test*.class" />
+			</fileset>
+		</jar>
+
+		<jar destfile="${dist.dir}/${lib.dir}/${resources.jar.name}" basedir="${resources.dir}" compress="true" />
+		<jar destfile="${dist.dir}/${lib.dir}/${properties.jar.name}" basedir="${properties.dir}" compress="true" />
+
+	</target>
+
+
+	<!-- creates the distribution -->
+	<target name="lib-build" depends="init, clean" description="--> copies the needed libraries">
+
+		<echo>Copy libaries</echo>
+
+		<copy todir="${dist.dir}/${lib.dir}">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
+
+	</target>
+
+
+	<!-- creates the distribution -->
+	<target name="lib-build-dist" depends="init, clean" description="--> copies the needed libraries">
+
+		<echo>Copy libaries</echo>
+
+		<copy todir="${dist.dir}/${lib.dir}">
+			<fileset dir="${lib.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+
+	</target>
+
+		
+	<!-- copies the documentation for distribution -->
+	<target name="doc-build" depends="init, clean, prepare" description="--> copies the doc-dir">
+
+		<echo>Creating the doc jar</echo>
+
+		<jar destfile="${dist.dir}/${lib.dir}/${doc.jar.name}" compress="true">
+			<fileset dir="${basedir}">
+				<include name="${doc.dir}/**/*" />
+			</fileset>
+		</jar>
+
+		<copy todir="${lib.dir}">
+			<fileset dir="${dist.dir}/${lib.dir}">
+				<include name="doc.jar" />
+			</fileset>
+		</copy>
+
+	</target>
+
+
+	<!-- signs all jars of the distribution -->
+	<target name="jar-sign" depends="init" description="--> signs all jars of the distribution">
+
+		<signjar storepass="${keystore.password}" alias="${keystore.alias}" keystore="${keystore.location}" lazy="false">
+			<fileset dir="${dist.dir}/${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</signjar>
+
+	</target>
+
+
+	<target name="prepare-dist" depends="init, clean, jar-build-dist, lib-build-dist, doc-build" description="--> the steps used for preparing the distribution" />
+
+	<target name="prepare-dist-webstart" depends="init, clean, jar-build, lib-build, doc-build" description="--> the steps used for preparing the distribution">
+
+		<move todir="${dist.dir}/${lib.dir}" file="${dist.dir}/${dist.jar.name}"/>
+
+	</target>
+
+
+	<!-- creates the distribution -->
+	<target name="dist" depends="prepare-dist" description="--> creates the distribution">
+
+		<zip destfile="${dist.base.dir}/${dist.zip.name}" basedir="${dist.dir}" />
+
+	</target>
+
+
+	<!-- creates the webstart-distribution -->
+	<target name="dist-webstart" depends="prepare-dist-webstart, jar-sign" description="--> creates the webstart-distribution">
+
+		<copy todir="${dist.dir}" file="${jnlp.file.name}" />
+		<copy todir="${dist.dir}" file="icon.jpg" />
+
+		<zip destfile="${dist.base.dir}/${dist.webstart.zip.name}" basedir="${dist.dir}" />
+
+	</target>
+
+
+	<!-- creates the javadoc -->
+	<target name="javadoc" depends="init" description="--> creates the javadoc">
+
+		<delete dir="${javadoc.dir}" />
+
+		<javadoc access="public" author="true" destdir="${javadoc.dir}" doctitle="BattleForge API ${version.full}" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="de.*" source="1.5" sourcepath="src/java" splitindex="true" use="true" version="true">
+			<link href="http://java.sun.com/j2se/1.5.0/docs/api/" offline="true" packagelistloc="${jdk-packagelist.dir}" />
+		</javadoc>
+
+	</target>
+
+
+	<target name="jdodoclet" depends="init">
+		<taskdef name="jdodoclet" classname="xdoclet.modules.jdo.JdoDocletTask" classpathref="classpath"/>
+			
+		<jdodoclet jdospec="2.0" destdir="${src.java.dir}">
+			<fileset dir="${src.java.dir}">
+				<include name="**/jdo/"/>
+			</fileset>
+			<jdometadata project="package" generation="package"/>
+			<jdoobjectidgenerator/>
+		</jdodoclet>
+		
+		<copy todir="${classes.dir}">
+			<fileset dir="${src.java.dir}">
+			    <include name="**/package.jdo"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	
+	<target name="enhance" depends="init" description="JPOX enhancement">
+	    <taskdef name="jpoxenhancer" classname="org.jpox.enhancer.tools.EnhancerTask" classpathref="classpath"/>
+		
+	    <jpoxenhancer classpathref="classpath"/>
+	</target>	
+</project>

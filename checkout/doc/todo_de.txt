@@ -1,0 +1,68 @@
+Diese Liste enthält aktuell geplante Features. Wenn ein Feature umgesetzt wurde,
+wird es aus dieser Liste verschwinden und in der Datei changelog_*.txt bei der
+jeweiligen Version auftauchen.
+
+                                T o D o - L I S T
+
+ToDo:
+- (a) Benutzerverwaltung (Xxenon, PHP)
+- (a) Benutze Bibliotheken im Info-Dialog ergänzen
+- (a) Rechtetabelle aufbauen
+- (a) Panel Spieleinstellungen (Icon, usw...)
+- (a) Benutzerinterface für die PHP-Installation (Xxenon)
+- (a) Routenberechnung überarbeiten (Manuel)
+- (a) Interne Restrukturierung der Klassen / Ergänzen von Listenern zu einem
+      zentralen Universe-Modell (Werner / Dirk)
+- (a) Fertigstellung IRC-Client (Meldric)
+- (a) Wegpunkte wegspeichern für Anzeige und Berechnung
+- (a) Fehlende Schritte für eine komplette Runde ergänzen (alle)
+- (a) Einheitenanzeige (Baum / PanelUnitTree)
+- (a) Verschieden Gebäude auf Systemen bauen
+- (a) Produktionsstraßen an Fabriken anbauen (kann Chassis bauen, von denen
+      Pläne vorhanden sind) - Informationsüberfälle!
+- (a) Dialog zur Verwaltung und zum Anlegen logischer Einheiten
+- (b) Anzeige der offenen Schlachten für alle User beim Start des Clients
+      (Anzeige der verbleibenden Tage, bis automatisch ausgewürfelt wird)
+- (b) Wizard zum Erzeugen ganzer Einheiten mit Strukturen
+- (b) Rechte einbauen für das Editieren von Systemen
+- (b) Passwörter verschlüsselt abspeichern (Dirk)
+- (b) PlugIn-Schnittstelle zur Darstellung von customisierten Panels (als AR)
+- (b) Panel zum Anlegen von logischen Einheiten (?)
+- (b) Umkämpfte Systeme markieren (Fadenkreuz?)
+- (b) Charakterkreation einbauen, Charaktere mit Einheiten verbinden
+      (Charaktereigenschaften müssen Auswirkungen haben)
+- (b) Fraktionsgrenzen in die Karte zeichnen (Dirk)
+- (b) Industrie umsetzen
+- (b) Strategiepanel erarbeiten (alle)
+- (b) Verschiedene Sichten auf Einheiten und logische Einheiten (alle)
+- (b) Internationalisierungsstrings einfügen (alle)
+- (b) Logische Einheiten (Werner)
+- (b) Diplomatie (Meldric)
+- (b) SSL-Verschlüsselung der gesamten Kommunikation / Sicherheit (Dirk)
+- (b) Schnittstelle zu verschiedenen möglichen Spiel-Engines (alle)
+- (c) Table durch TextArea ersetzen im IRCClient
+- (c) Im Owner-Objekt den spielenden User mit eintragen
+- (c) Mechdetail-Ansicht erstellen
+- (c) Dokumentation (alle)
+- (c) Ladekapazitäten von Schiffen (Werner)
+- (c) Speziellen grafischen Look entwickeln (Meldric / Dirk)
+
+Aufgaben:
+- Schneegrafiken anpassen
+- Ownergrafiken eintragen (Datenbank)
+- Ownerfarben eintragen (Datenbank)
+- Gebäudegrafiken besorgen (Col. Gooseman)
+- Systeme abgleichen (mit MBO-Datenbank)
+- Statuszeile nur bei der Karte anzeigen
+
+Prioritäten:
+(a) Sehr hoch
+(b) Hoch
+(c) Später
+
+--------------------------------------------------------------------------------
+
+Bekannte Fehler:
+- Im Adminmodul kann momentan nicht gespeichert werden
+- Wenn man beim zweiten Bestätigen beim Login (Spielauswahl) "Abbrechen" drückt,
+  führt das zu einer NullPointer-Exception

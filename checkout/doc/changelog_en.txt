@@ -1,0 +1,45 @@
+The changelog contains in short words the major changes from one version to
+another. Some of the features moved here from the ToDo-List (and disappeared
+there), but not all.
+
+  Legend:
+   * New Feature
+   + Improvement
+   x Bugfix
+   - Information
+
+                                C H A N G E L O G
+
+0.00.00_b43 (Fourth Alpha):
+ * Global exception handling
+ * Internetconnection (PHP tunnel)
+ * New settings-dialog to edit battleforge.properties
+ * Setupdialog for properties during first startup (local chache)
+ * Deployment as Java webstart possible (alternative)
+ * New ant-build scripts
+ + Replace files to streams
+ + Language selection (only) during login process
+ + Userinterface optimizations
+ + Replaced arrayLists with list-objects
+
+--------------------------------------------------------------------------------
+0.00.00_b31 (Third Alpha):
+ + Map performance significantly increased (Useable on a 300Mhz/64MB-Laptop!)
+ * Map is dragable with the mouse now (hold button and move!)
+ * Waypoints can be added by holding shift and leftclick on a system now
+
+--------------------------------------------------------------------------------
+0.00.00_b30 (Second Alpha):
+ * First time the admintool was released
+ * Early version of IRC-Client added
+ + Map performance increased
+ + DB performance increased
+ x Repaint problems fixed
+ x Database will be ended properly on exit
+ - We removed the visual style (l&f) for now
+ 
+--------------------------------------------------------------------------------
+0.00.00_b10 (Initial Alpha):
+ * First time BattleForge was released to public
+ - Initial state
+ 

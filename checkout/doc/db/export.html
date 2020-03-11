@@ -1,0 +1,3020 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="description" content="DBDesigner4 HTML Report">
+  <title>DBDesigner4 HTML Report</title>
+  <style>
+/* Links defaults */
+
+a {color:#000000; text-decoration: underline;}
+a:hover { text-decoration: none; color: #ff0000; text-decoration: underline}
+
+/* Scrollers */
+body, textarea {
+  scrollbar-base-color:#eeeeee;
+  scrollbar-3dlight-color:#62708A;
+  scrollbar-arrow-color:#62708A;
+  scrollbar-darkshadow-color:#000000;
+  scrollbar-face-color:#eeeeee;
+  scrollbar-highlight-color:#ffffff;
+  scrollbar-shadow-color:#aaaaaa;
+  scrollbar-track-color:#eeeeee;}
+
+/* NoMargins */
+body { margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px }
+
+/* General Font */
+div, p, td {font-family: Tahoma, Verdana, Arial, MS Sans Serif; color: black; font-size: 11px}
+
+/* Fonts */
+.fontNB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 11px; font-weight: 700}
+.fontL {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 12px}
+.fontX {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 14px; font-weight: 700}
+.fontXB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 16px; font-weight: 700}
+.fontS {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 10px; font-weight: 500}
+.fontSB {font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 10px; font-weight: 700}
+
+  </style>
+</head>
+
+<body>
+
+<p class="fontX">Database Model plugin_tmp.xml<hr></p>
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_building
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>BuildingID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Name</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PurcasePrice</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">MaintenanceCosts</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BuildingTime</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BuildingID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_color
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>ColorID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Name</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Red</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Green</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Blue</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ColorID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_diplomacy
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>DiplomacyID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID1</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID2</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StateID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DiplomacyID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_diplomacystate
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>StateID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StateName</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StateID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_dropship
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>DropshipID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Mech</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Tank</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Infantry</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Charge</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DropshipID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_games
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>GameID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameName</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">RoundDate</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DATE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_gameuser
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>GameUserID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UserID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">RoundDate</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DATE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameUserID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_jumpship
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>JumpshipID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">JumpCharges</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">x</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">y</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">z</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">JumpshipID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_logicalunit
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>LogicalUnitID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">LogicalUnitStructueID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ParentLogicalUnitID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Name</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">LogicalUnitID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_logicalunitstructur
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>LogicalUnitStructueID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ParentLogicalUnitStructueID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerTypeID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Name</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">LogicalUnitStructueID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_mech
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>MechID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">MechID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_owner
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>OwnerID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerTypeID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StartAreaID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ColorID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Name</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NameShort</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(10)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Logo</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_ownerdescription
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>OwnerDescriptionID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Description</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TEXT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">CountryCode</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(2)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerDescriptionID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_ownertype
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>OwnerTypeID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerType</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerTypeShort</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(10)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerTypeID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_populationstatus
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>PopulationStatusID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PopulationStatus</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PopulationStatusID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_produktion
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>ProductionID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemPropertyID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UsedIndustrieSlots</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PipelineNumber</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ProductionID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_route
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>RouteID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StartSystemID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DestinationSystemID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Name</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">IsOfficialRoute</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TINYINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">RouteID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_routedetails
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>RouteDetailsID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">RouteID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">IsCalculated</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TINYINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">RouteDetailsID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_session
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>SessionID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UserID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Login</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TIMESTAMP</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Logout</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TIMESTAMP</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SessionID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_shipproperty
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>ShipPropertyID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitTypID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">MaxJumpCharges</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DockingStations</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Tonnage</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Propellant</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Charge</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Crew</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Passanger</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TankFront</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TankRear</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TankFrontLeft</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TankFrontRight</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TankRearLeft</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TankRearRight</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ShipPropertyID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_startarea
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>StartAreaID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StartArea</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StartAreaID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_startsystemowner
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>StartSystemOwnerID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StartAreaID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StartSystemOwnerID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_startype
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>StarTypeID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ColorID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StarType</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">JumpSailRecharging</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DistanceToSun</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TravelTime</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StarTypeID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_system
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>SystemID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">StarTypeID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PopulationStatusID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Name</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">x</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">y</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">z</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Population</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Capital</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Temperature</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Position</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Moons</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Gravitation</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">WaterPercentage</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Lifeform</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Resources</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">MainPlanet</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemImageName</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_systemdescription
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>SystemDescriptionID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">CountryCode</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(2)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Description</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TEXT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemDescriptionID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_systemowner
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>SystemOwnerID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemOwnerID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_systemproperty
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>SystemPropertyID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemOwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">BuildingID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">IsReady</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TINYINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">Progress</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">IndustrieSlots</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AutomaticProduction</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">TINYINT</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">SystemPropertyID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_unit
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>UnitID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">RouteDetailsID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">RouteID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">LogicalUnitID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">OwnerID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">GameID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitTypID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitName</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_unitclass
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>UnitClassID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER(10)</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitClassName</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitClassID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_unittype
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>UnitTypID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitClassID</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER(10)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitTypName</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">ConstructionTime</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PurcasePrice</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">MaintenanceCosts</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">DOUBLE</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NeededIndustrieSlots</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">INTEGER</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UnitTypID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#e4efff">
+  <tr>
+    <td class="fontX">bf_user
+     <font class="fontS"><br></font></td>
+  </tr>
+  <tr>
+    <td>
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d0dfff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">ColumnName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">DataType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">PrimaryKey&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">NotNull&nbsp;&nbsp;</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">Flags</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Default Value</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="20%">Comment</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="1%">AutoInc</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>UserID</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0"><b>INTEGER</b></td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">PK</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UNSIGNED </td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">AI</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">User</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UserPassword</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">VARCHAR(255)</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">NN</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">&nbsp;</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="fontB">
+      <table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#d8e6ff">
+        <tr>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexName</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">IndexType</td>
+          <td class="fontSB" style="border-bottom: 1px solid #606060" width="15%">Columns</td>
+        </tr>
+        <tr>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0" valign="top">PRIMARY</td>
+          <td class="fontS" style="border-bottom: 1px solid #C0C0C0">UserID<br></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<br>
+</body>
+
+</html>

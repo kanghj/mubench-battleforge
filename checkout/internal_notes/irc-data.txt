@@ -1,0 +1,3 @@
+Server: irc.quakenet.eu.org
+Server Port: 6667
+Channel: #BattleForge

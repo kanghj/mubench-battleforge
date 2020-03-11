@@ -1,0 +1,6 @@
+.svn/
+build/.svn/
+build/.gradle/
+*.class
+build/
+._*

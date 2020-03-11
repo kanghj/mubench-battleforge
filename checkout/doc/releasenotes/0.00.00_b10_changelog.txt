@@ -1,0 +1,3 @@
+0.00.00_b10 (Initial Alpha):
+ * First time BattleForge was released to public
+ - Initial state

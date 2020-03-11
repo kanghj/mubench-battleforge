@@ -1,0 +1,23 @@
+Ein paar Ideen, was in Zukunft noch alles integriert werden könnte:
+
+- Rollenspielelemente
+  - Charakterbögen
+  - Charakter spielen einzlne Konflikte aus (Forenrollenspiel)
+  - Spione und Charaktere "bevölkern" Planeten (ohne Fraktionszugehörigkeit)
+    - Jeder könnte ein Spion sein, ich sehe nicht, wer diesen Charakter auf
+      dem jeweiligen Planeten angelegt hat
+  - Charaktere können nur auf Systemen angelegt werden, die mir gehören
+  - Fraktionsabhängige Charaktereigenschaften (?)
+  - Standardwerte bei Charaktererschaffung evtl. fraktionsabhängig
+  - Bei Reisen in Systeme anderer Owner Grenzkontrollen usw.
+  - Charaktereigenschaften beeinflußen die Konfliktparameter für Kämpfe
+  - Charaktere können einzelne Aufgaben erhalten, die gelöst werden können
+  - Charaktere erleben Zufallsereignisse (wie z.B. Verkehrsunfälle, Natur-
+    katastrophen, usw.)
+  - Charaktere können im Rang aufsteigen, je nach Erfahrung
+
+- Industrie
+  - Einzelne Industriezweige existieren auf den authentischen Systemen
+
+- Diplomatie
+  - Owner können, wenn sie verbündet sind, Ressourcen austauschen

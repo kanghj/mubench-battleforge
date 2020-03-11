@@ -1,0 +1,13 @@
+FONT          {FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 12px; COLOR: #CCCCCC;}
+TD            {FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 12px; COLOR: #CCCCCC;}
+BODY          {FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 12px; COLOR: #CCCCCC;}
+P             {FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 12px; COLOR: #CCCCCC;}
+H1            {FONT-FAMILY: Tahoma; FONT-SIZE: 22px; FONT-WEIGHT: bold; COLOR: #FFCC33}
+H2            {FONT-FAMILY: Tahoma; FONT-SIZE: 18px; FONT-WEIGHT: bold; COLOR: #FFCC33}
+H3            {FONT-FAMILY: Tahoma; FONT-SIZE: 14px; FONT-WEIGHT: bold; COLOR: #FFCC33}
+CODE          {FONT-FAMILY: Verdana,Helvetica; FONT-SIZE: 13px; COLOR: #FFFF00; FONT-WEIGHT: bold;}
+A             {FONT-SIZE: 10pt; FONT-FAMILY: Verdana, Helvetica; }
+A:link        {cursor:crosshair; BACKGROUND: none; COLOR: #FFFFCC; }
+A:active      {cursor:crosshair; BACKGROUND: none; COLOR: #FFFFCC; }
+A:visited     {cursor:crosshair; BACKGROUND: none; COLOR: #FFFFCC; }
+A:hover       {cursor:crosshair; BACKGROUND: none; COLOR: #FFFFCC; }

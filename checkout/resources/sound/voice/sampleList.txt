@@ -1,0 +1,43 @@
+BattleForge Voicesamples:
+
+de
+
+0001 - "Willkommen Krieger."
+0002 - "Sequenz wird berechnet."
+0003 - "Verbindung hergestellt."
+0004 - "Einen Augenblick bitte."
+0005 - "Gute Jagd Krieger."
+0006 - "Wir werden angegriffen."
+0007 - "Ein Spion wurde entdeckt."
+0008 - "Sprungschiff geortet."
+0009 - "Das System wurde erobert."
+0010 - "Das System ist verloren."
+0011 - "Die Bevoelkerung ist zufrieden."
+0012 - "Die Bevoelkerung ist im Aufruhr."
+0013 - "Es gibt Neuigkeiten."
+0014 - "Auf Wiedersehen."
+0015 - "Das Sprungschiff ist verloren."
+0016 - "Ein Fehler ist aufgetreten."
+0017 - "Getrennt!"
+
+--------------------------------------------------
+
+en
+
+0001 - "Welcome Warrior."
+0002 - "Computing jump sequence."
+0003 - "Communication link established."
+0004 - "Stand by."
+0005 - "Good hunting warrior."
+0006 - "We are under attack."
+0007 - "A spy was caught."
+0008 - "A jumpship was detected."
+0009 - "System conquered."
+0010 - "System lost."
+0011 - "The Population is satisfied."
+0012 - "The People going mad."
+0013 - "There are some news."
+0014 - "See you later."
+0015 - "The Jumpship was lost."
+0016 - "System malfunction detected."
+0017 - "Disconnected!"

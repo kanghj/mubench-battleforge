@@ -1,0 +1,6 @@
+Datenbankname db100004686
+Hostname db303.puretec.de
+Port 3306 (Standardport)
+Benutzername dbo100004686
+Passwort kerensky
+Status Die Einrichtung wird gestartet.

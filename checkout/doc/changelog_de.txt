@@ -1,0 +1,47 @@
+Diese Änderungsliste enthält in kurzen Beschreibungen die Hauptänderungen von
+einer Version zur nächsten. Einige der Features kamen von der ToDo-Liste in
+diese Datei (und sind dort verschwunden), aber nicht alle.
+
+  Legende:
+   * Neues Feature
+   + Verbesserung
+   x Bugfix
+   - Information
+
+                                C H A N G E L O G
+
+0.00.00_b43 (Vierte Alpha):
+ * Globales Exceptionhandling
+ * Internetverbindung (PHP-Tunnel)
+ * Einstellungsdialog zum Editieren von battleforge.properties
+ * Properties beim ersten Start (lokaler Cache)
+ * Java Webstart umgesetzt (Alternative)
+ * Neuer Buildprozess mit ant
+ + Files auf Streams umgebaut (wegen Webstart)
+ + Sprachwahl nur am Anfang im Loginfenster
+ + Userinterface Optimierung
+ + Arraylisten durch Listenobjekte ersetzt
+
+--------------------------------------------------------------------------------
+0.00.00_b31 (Dritte Alpha):
+ + Kartenperformance extrem gesteigert (Läuft flüssig auf 300Mhz/64MB-Laptop!)
+ * Karte kann jetzt per Maus-Drag verschoben werden (klicken und halten, dann
+   ziehen)
+ * Wegpunkte können (mit gedrückter Shift-Taste) jetzt per Mausklick in der
+   Karte hinzugefügt werden
+
+--------------------------------------------------------------------------------
+0.00.00_b30 (Zweite Alpha):
+ * Admintool zum ersten mal veröffentlicht
+ * Frühe Version eines IRC-Clients integriert
+ + Grafische Performance gesteigert
+ + Datenbankperformance gesteigert
+ x Grafische Problem beseitigt
+ x Die Datenbank wird nun sauber heruntergefahren
+ - SkinLF (Look&Feel) wurde bis auf weiteres entfernt
+ 
+--------------------------------------------------------------------------------
+0.00.00_b10 (Initiale Alpha):
+ * Mit dieser Version wurde BattleForge zum ersten Mal released
+ - Initialer Zustand
+ 

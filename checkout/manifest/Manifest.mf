@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Main-Class: de.battleforge.BFLauncher
+Class-Path: lib/capi.jar 
+ lib/commons-collections-3.1.jar 
+ lib/hsqldb.jar 
+ lib/irclib.jar 
+ lib/log4j-1.2.9.jar 
+ lib/doc.jar 
+ lib/bfdb.jar 
+ lib/resources.jar 
+ lib/properties.jar 
+ lib/animation-1.1.3.jar
+
+Name: BattleForge
+Specification-Version: 0.0.40
+Specification-Vendor: BattleForge-Development-Team
